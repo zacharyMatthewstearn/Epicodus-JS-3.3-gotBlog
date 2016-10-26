@@ -1,5 +1,5 @@
 body {
-  background-color: papayawhip;
+  background-color: peachpuff;
 }
 
 ul {
@@ -10,18 +10,47 @@ li {
 }
 
 a,
+a:link,
 a:active,
 a:hover,
 a:visited {
-  color: mistyrose;
+  color: peachpuff;
   text-decoration: none;
+}
+
+#nav {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(102,51,153,0.5);
+  border: 3px solid mistyrose;
+  box-shadow: 0 0 15px rebeccapurple;
+  border-radius: 32px;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 5px;
+  .navItem {
+    padding: 10px 20px;
+    border-radius: 24px;
+    &:hover {
+      // background-color: rebeccapurple;
+      // color:white;
+      text-shadow: 0 0 10px mistyrose;
+    }
+  }
 }
 
 .jumbotron {
   text-align: center;
-  background-color: peachpuff;
-  color: mistyrose;
-  text-shadow: 0 0 15px rebeccapurple;
+  background-color: rgba(102,51,153,0.5);
+  text-shadow: 0 0 10px mistyrose;
+  margin-bottom: 20px;
+  padding: 2rem 0;
+  font-family: "Castamere Sans";
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 .post-tile {
@@ -46,6 +75,12 @@ a:visited {
        padding-left: 10px;
     }
   }
+  &:hover {
+    box-shadow: 0 0 15px 5px rebeccapurple;
+    img {
+      box-shadow: 0 0 15px 5px mistyrose;
+    }
+  }
 }
 
 .post-full {
@@ -58,7 +93,7 @@ a:visited {
   margin: 30px;
   img {
     width: 100%;
-    border: 3px solid rebeccapurple;
+    border: 3px solid mistyrose;
     border-radius: 15px;
   }
   .inner-box {
