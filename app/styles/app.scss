@@ -1,0 +1,40 @@
+body {
+  background-color: papayawhip;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: peachpuff;
+  color: mistyrose;
+  text-shadow: 0 0 15px rebeccapurple;
+}
+
+.post-tile {
+  border: 3px solid mistyrose;
+  box-shadow: 0 0 15px rebeccapurple;
+  padding: 20px;
+  background-color: rgba(102,51,153,0.5);
+  color: black;
+  img {
+    width: 100%;
+  }
+  .row {
+    margin: 0;
+  }
+  .col-sm-6 {
+    padding: 0;
+    &:first-of-type{
+       padding-right: 10px;
+    }
+    &:last-of-type{
+       padding-left: 10px;
+    }
+  }
+}
