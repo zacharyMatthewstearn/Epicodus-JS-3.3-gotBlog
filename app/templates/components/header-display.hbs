@@ -7,7 +7,13 @@
 </div>
 
 <div class="container" id="nav">
-  <span class="left navItem">Index</span>
-  <span class="center navItem">Add Article</span>
+  {{#link-to 'index'}}
+    <span class="left navItem">Index</span>
+  {{/link-to}}
+  {{#link-to 'post-add'}}
+    <span class="center navItem">Add Article</span>
+  {{/link-to}}
+  {{#link-to 'post-add'}}
   <span class="right navItem">Comments</span>
+  {{/link-to}}
 </div>

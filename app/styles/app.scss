@@ -109,3 +109,25 @@ a:visited {
     font-size: 1.6rem;
   }
 }
+
+#container-form {
+  width: 280px;
+  margin-left: 31px;
+  border: 3px solid mistyrose;
+  border-radius: 15px;
+  background-color: rgba(102,51,153,0.5);
+  padding: 20px;
+  .form-group {
+    text-align: right;
+  }
+  .btn {
+    margin: 0 auto;
+    display: block;
+    background-color: rgba(102,51,153,0.5);
+    font-weight: bold;
+    color: peachpuff;
+  }
+  textarea {
+    vertical-align: middle;
+  }
+}
