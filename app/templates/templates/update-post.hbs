@@ -1,6 +1,6 @@
 {{header-display}}
 
-<li class="post-add">
+<li class="post-update">
   <img src={{post.image}}>
   <div class="inner-box">
     <h2>{{post.title}}</h2>
@@ -9,5 +9,6 @@
     {{formattedContent}}
   </div>
 </li>
-
-{{post-add savePost="savePost"}}
+{{#each model.posts as |post|}}
+  {{update-post post=post update='update'}}
+{{/each}}

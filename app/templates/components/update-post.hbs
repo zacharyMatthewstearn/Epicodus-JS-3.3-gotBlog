@@ -1,3 +1,4 @@
+{{#if addNewArticle}}
 <div id="container-form" class="container">
   <form class="" action="index.html" method="post">
     <div class="form-group">
@@ -24,6 +25,8 @@
       <label for="content">Content</label>
       {{textarea value=content id="content" cols="19" rows="1"}}
     </div>
-    <button {{action 'savePost'}}class="btn" type="button" name="add">Add Article</button>
+    <button {{action 'updatePost'}}class="btn" type="button" name="save">Save</button>
   </form>
 </div>
+{{else}}
+{{/if}}
