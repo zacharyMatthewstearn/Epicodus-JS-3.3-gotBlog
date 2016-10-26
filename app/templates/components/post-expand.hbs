@@ -1,15 +1,9 @@
-<li class="post-tile">
+<li class="post-full">
+  <img src={{post.image}}>
   <div class="inner-box">
-    <div class="row">
-      <div class="col-sm-6">
-        <img src={{post.image}}>
-      </div>
-      <div class="col-sm-6">
-        <h3>{{post.title}}</h3>
-        <h4><em>{{post.subtitle}}</em></h4>
-        <h5>By {{post.author}}, {{post.date}}</h5>
-        <p>{{post.snippet}}</p>
-      </div>
-    </div>
+    <h2>{{post.title}}</h2>
+    <h3><em>{{post.subtitle}}</em></h3>
+    <h4><em>By {{post.author}}, {{post.date}}</em></h4>
+    {{formattedContent}}
   </div>
 </li>
