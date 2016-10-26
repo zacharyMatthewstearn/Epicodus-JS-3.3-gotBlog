@@ -4,9 +4,9 @@ body {
 
 ul {
   padding-left: 0;
-  li {
-    list-style: none;
-  }
+}
+li {
+  list-style: none;
 }
 
 .jumbotron {
@@ -22,6 +22,7 @@ ul {
   padding: 20px;
   background-color: rgba(102,51,153,0.5);
   color: black;
+  margin-bottom: 30px;
   img {
     width: 100%;
   }
@@ -37,4 +38,8 @@ ul {
        padding-left: 10px;
     }
   }
+}
+
+.post-full {
+  //DO STUFF!!!!!!!
 }
