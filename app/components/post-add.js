@@ -11,12 +11,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         snippet: this.get('content').slice(0, 100) + "...",
         image: this.get('image')
-        // timestamp: moment().format('LLL')
       };
-      console.log(params);
-
-
-
       this.set('addNewPost', false);
       this.sendAction('savePost', params);
     }

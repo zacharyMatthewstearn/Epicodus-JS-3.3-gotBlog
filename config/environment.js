@@ -18,11 +18,11 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyB7wNCIHtw-sOss287Nib3_n9X6ny6Yi4E",
-      authDomain: "gotblog-a0dc5.firebaseapp.com",
-      databaseURL: "https://gotblog-a0dc5.firebaseio.com",
-      storageBucket: "gotblog-a0dc5.appspot.com",
-      messagingSenderId: "264329218859"
+      apiKey: "AIzaSyBfGx9ezLvistNKEJ6L7rHXRmZ0W8cfxAY",
+      authDomain: "gotblog-905ad.firebaseapp.com",
+      databaseURL: "https://gotblog-905ad.firebaseio.com",
+      storageBucket: "gotblog-905ad.appspot.com",
+      messagingSenderId: "1043319191068"
     },
 
     APP: {

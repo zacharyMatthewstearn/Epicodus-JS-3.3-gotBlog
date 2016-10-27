@@ -5,5 +5,14 @@
     <h3><em>{{post.subtitle}}</em></h3>
     <h4><em>By {{post.author}}, {{post.date}}</em></h4>
     {{formattedContent}}
+    <div class="buttons-bar">
+      {{#if updaterOpen}}
+        <button {{action 'closeUpdater' post}}>Cancel Update</button>
+        {{post-update}}
+      {{else}}
+        <button {{action 'openUpdater' post}}>Update Post</button>
+        <button {{action 'delete' post}}>Delete Post</button>
+      {{/if}}
+    </div>
   </div>
 </li>
