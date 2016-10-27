@@ -10,12 +10,12 @@ export default Ember.Route.extend({
       post.destroyRecord();
       this.transitionTo('index');
     },
-    openUpdater2(post) {
+    openUpdater2() {
       // console.log(this.updaterOpen);
       this.set('updaterOpen', true);
       // console.log(this.updaterOpen);
     },
-    closeUpdater2(post) {
+    closeUpdater2() {
       // console.log(this.updaterOpen);
       this.set('updaterOpen', false);
       // console.log(this.updaterOpen);
