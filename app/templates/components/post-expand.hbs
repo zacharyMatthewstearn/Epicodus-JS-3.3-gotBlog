@@ -8,7 +8,7 @@
     <div class="buttons-bar">
       {{#if updaterOpen}}
         <button {{action 'closeUpdater' post}}>Cancel Update</button>
-        {{post-update}}
+        {{post-update post=post update="update"}}
       {{else}}
         <button {{action 'openUpdater' post}}>Update Post</button>
         <button {{action 'delete' post}}>Delete Post</button>

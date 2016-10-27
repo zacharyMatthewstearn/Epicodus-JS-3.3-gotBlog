@@ -19,6 +19,18 @@ export default Ember.Route.extend({
       // console.log(this.updaterOpen);
       this.set('updaterOpen', false);
       // console.log(this.updaterOpen);
+    },
+    update(post, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          post.set(key, params[key]);
+          // if(key==="content") {
+          //   post.set(snippet, (this.get('content').slice(0, 100) + "..."));
+          // }
+        }
+      });
+      post.save();
+      // this.transitionTo('index');
     }
   }
 });

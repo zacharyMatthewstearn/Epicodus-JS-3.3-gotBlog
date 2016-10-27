@@ -11,10 +11,13 @@ export default Ember.Component.extend({
         this.sendAction('beheadPost', post);
       }
     },
-    openUpdater(post) {
+    update(post, params) {
+      this.sendAction('update', post, params);
+    },
+    openUpdater() {
       this.set('updaterOpen', true);
     },
-    closeUpdater(post) {
+    closeUpdater() {
       this.set('updaterOpen', false);
     }
   }
