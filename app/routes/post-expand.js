@@ -24,10 +24,10 @@ export default Ember.Route.extend({
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           post.set(key, params[key]);
-          // if(key==="content") {
-          //   post.set(snippet, (this.get('content').slice(0, 100) + "..."));
-          // }
         }
+        // else {
+        //   post.set(key, "fuck off");
+        // }
       });
       post.save();
       // this.transitionTo('index');

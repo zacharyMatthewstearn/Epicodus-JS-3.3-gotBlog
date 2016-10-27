@@ -9,8 +9,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: this.get('date'),
         image: this.get('image'),
-        content: this.get('content'),
-        snippet: undefined
+        content: this.get('content')
       };
       this.sendAction('updaterOpen', false);
       this.sendAction('update', post, params);

@@ -8,9 +8,9 @@ export default Ember.Component.extend({
         title: this.get('title'),
         subtitle: this.get('subtitle'),
         author: this.get('author'),
-        content: this.get('content'),
-        snippet: this.get('content').slice(0, 100) + "...",
-        image: this.get('image')
+        date: this.get('date'),
+        image: this.get('image'),
+        content: this.get('content')
       };
       this.set('addNewPost', false);
       this.sendAction('savePost', params);
